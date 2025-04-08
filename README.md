@@ -1,43 +1,14 @@
-# Healthcare Partners Quality Management System (QMS)
+# Healthcare Partners QMS (Static Demo Site)
 
-Welcome to the static HTML demonstration site for the Healthcare Partners Quality Management System (QMS). This project showcases a fully clickable and professionally designed interface for internal quality operations.
+This is a live-ready static HTML demonstration of the Healthcare Partners Quality Management System. Includes all major modules with demo layouts, branding, and placeholders for interactivity.
 
-## 🔍 Modules Included
+## Features
+- Login + module dashboard
+- Document Library (Templates + SOPs)
+- CAPA Tracker, Risk Register, Audit Calendar
+- COSHH, Suppliers, Projects, Training
+- Feedback + Lessons Learned + AI Assistant
 
-- 📁 Document Library
-- ✅ CAPA / Non-Conformities Tracker
-- 🚨 Incident Reporting
-- 🗓️ Audit Schedule
-- 📉 Risk Register
-- ⚗️ COSHH & Inventory Management (EME, RTS, MFL)
-- 📦 Supplier Dashboard
-- 👩‍⚕️ Human Resources Dashboard
-- 🎓 Training & Competency Log
-- 📋 Project Management Database (with deadlines)
-- 💬 Feedback & Engagement Hub
-- 📚 Lessons Learned
-- 🤖 AI Help Assistant
+Visit: https://KristinSchanks.github.io/healthcare-qms-demo/
 
-## 🌐 Live Demo
-
-> This site is built using **pure HTML/CSS** and can be deployed via [GitHub Pages](https://pages.github.com/).
-
-To view locally, simply open `index.html` in your browser.
-
-## 🚀 Deployment Instructions
-
-1. Upload all files to your GitHub repository:
-   **https://github.com/KristinSchanks/healthcare-qms-demo**
-2. Go to **Settings → Pages**.
-3. Set source to `main` branch and root (`/`) folder.
-4. GitHub will provide your live site at:
-   **https://KristinSchanks.github.io/healthcare-qms-demo/**
-
-## 🔒 Disclaimer
-
-This demo is intended for demonstration purposes only and does not contain backend functionality or secure login features.
-
----
-
-**© Healthcare Partners 2018**  
-[www.healthcarepartnersltd.co.uk](https://www.healthcarepartnersltd.co.uk/)
+© Healthcare Partners 2018
