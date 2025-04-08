@@ -2,57 +2,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Document Library - Healthcare Partners QMS</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body {
-      background-color: #f5f8fa;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      color: #2e2e2e;
+    .table th {
+      background-color: #e9f1f7;
     }
-    .module-box {
-      background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
-    }
-    a {
-      text-decoration: none !important;
+    .badge {
+      font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
   <div class="container py-4">
     <div class="text-center mb-4">
-      <img src="logo_full.png" height="50" class="mb-2">
+      <img src="../assets/img/logo_full.png" height="50" class="mb-2" />
       <h2 style="color: #005eb8; font-weight: 700;">Document Library</h2>
     </div>
-    <div class="module-box">
-      
-<table class="table table-striped"><thead>
-<tr><th>Ref</th><th>Name</th><th>Department</th><th>Last Reviewed</th><th>View</th></tr>
-</thead><tbody>
-<tr><td>QMS-001</td><td>Audit SOP</td><td>Quality</td><td>2025-03-10</td><td><a href="#">View</a></td></tr>
-<tr><td>HR-014</td><td>New Starter Pack</td><td>HR</td><td>2025-02-01</td><td><a href="#">View</a></td></tr>
-</tbody></table>
 
+    <div class="mb-4">
+      <h5>Templates</h5>
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr><th>Ref</th><th>Document Name</th><th>Department</th><th>Last Reviewed</th><th>Download</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>TMP-001</td><td>Audit Checklist Template</td><td>Quality</td><td>2025-03-10</td><td><a href="#">Download</a></td></tr>
+          <tr><td>TMP-002</td><td>New Starter Form</td><td>HR</td><td>2025-02-15</td><td><a href="#">Download</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h5>Policies & SOPs</h5>
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr><th>Ref</th><th>Document Title</th><th>Department</th><th>Status</th><th>Last Reviewed</th><th>View</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>POL-101</td><td>Data Protection Policy</td><td>Corporate</td><td><span class="badge bg-success">Current</span></td><td>2025-01-30</td><td><a href="#">View</a></td></tr>
+          <tr><td>SOP-202</td><td>Stock Ordering SOP</td><td>Procurement</td><td><span class="badge bg-warning text-dark">Due Soon</span></td><td>2024-11-15</td><td><a href="#">View</a></td></tr>
+          <tr><td>SOP-305</td><td>Labeling SOP</td><td>MFL</td><td><span class="badge bg-danger">Overdue</span></td><td>2023-12-05</td><td><a href="#">View</a></td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <footer class="text-muted mt-5 mb-3">
-    <small>© Healthcare Partners 2018 | 
-      <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">
-        www.healthcarepartnersltd.co.uk
-      </a>
-    </small>
+  <footer class="text-muted mt-5 mb-3 text-center">
+    <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
   </footer>
 </body>
 </html>

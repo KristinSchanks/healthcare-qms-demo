@@ -1,72 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Dashboard & Analytics - Healthcare Partners QMS</title>
-  
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body {
-      background-color: #f5f8fa;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      color: #2e2e2e;
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-    .module-box {
+    .dashboard-card {
       background: white;
-      border-radius: 10px;
-      padding: 30px;
+      border-radius: 12px;
+      padding: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
+    .dashboard-card h6 {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 10px;
     }
-    a {
-      text-decoration: none !important;
+    .dashboard-card img {
+      border-radius: 6px;
+      width: 100%;
     }
   </style>
-
 </head>
 <body>
   <div class="container py-4">
     <div class="text-center mb-4">
-      <img src="logo_full.png" height="50" class="mb-2">
+      <img src="../assets/img/logo_full.png" height="50" class="mb-2" />
       <h2 style="color: #005eb8; font-weight: 700;">Dashboard & Analytics</h2>
     </div>
-    <div class="module-box">
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="p-3 bg-white rounded shadow-sm">
-          <h6>CAPA Categories</h6>
-          <img src="https://via.placeholder.com/400x200?text=CAPA+Pie+Chart" class="img-fluid rounded border">
-        </div>
+    <div class="card-grid">
+      <div class="dashboard-card">
+        <h6>CAPA Categories</h6>
+        <img src="../assets/img/capa_pie.png" alt="CAPA Pie Chart" />
       </div>
-      <div class="col-md-6">
-        <div class="p-3 bg-white rounded shadow-sm">
-          <h6>Incident Overview</h6>
-          <img src="https://via.placeholder.com/400x200?text=Incident+Bar+Chart" class="img-fluid rounded border">
-        </div>
+      <div class="dashboard-card">
+        <h6>Incident Overview</h6>
+        <img src="../assets/img/incident_bar.png" alt="Incident Bar Chart" />
       </div>
-      <div class="col-md-6">
-        <div class="p-3 bg-white rounded shadow-sm">
-          <h6>Risk Levels</h6>
-          <img src="https://via.placeholder.com/400x200?text=Risk+Line+Graph" class="img-fluid rounded border">
-        </div>
+      <div class="dashboard-card">
+        <h6>Risk Levels</h6>
+        <img src="../assets/img/risk_line.png" alt="Risk Line Chart" />
       </div>
-      <div class="col-md-6">
-        <div class="p-3 bg-white rounded shadow-sm">
-          <h6>Supplier Evaluations</h6>
-          <img src="https://via.placeholder.com/400x200?text=Supplier+Evaluation+Chart" class="img-fluid rounded border">
-        </div>
+      <div class="dashboard-card">
+        <h6>Supplier Evaluations</h6>
+        <img src="../assets/img/supplier_chart.png" alt="Supplier Evaluation Chart" />
       </div>
-    </div>
     </div>
   </div>
-  <footer class="text-muted mt-5 mb-3">
+  <footer class="text-muted mt-5 mb-3 text-center">
     <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
   </footer>
 </body>

@@ -2,57 +2,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>CAPA Tracker - Healthcare Partners QMS</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body {
-      background-color: #f5f8fa;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      color: #2e2e2e;
-    }
-    .module-box {
-      background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
+    .badge {
       font-size: 0.9em;
-      color: #555;
     }
-    a {
-      text-decoration: none !important;
+    .table th {
+      background-color: #e9f1f7;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
   </style>
 </head>
 <body>
   <div class="container py-4">
     <div class="text-center mb-4">
-      <img src="logo_full.png" height="50" class="mb-2">
+      <img src="../assets/img/logo_full.png" height="50" class="mb-2" />
       <h2 style="color: #005eb8; font-weight: 700;">CAPA Tracker</h2>
     </div>
-    <div class="module-box">
-      
-<table class="table"><thead>
-<tr><th>Issue</th><th>Source</th><th>Status</th><th>Owner</th></tr>
-</thead><tbody>
-<tr><td>Process not followed</td><td>Internal Audit</td><td><span class="badge bg-warning text-dark">In Progress</span></td><td>Jane Doe</td></tr>
-<tr><td>Training Required</td><td>Datix</td><td><span class="badge bg-success">Completed</span></td><td>John Smith</td></tr>
-</tbody></table>
 
+    <div class="card p-3 mb-4">
+      <h5>Summary</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Open CAPAs: 5</li>
+        <li class="list-group-item">Overdue CAPAs: 2</li>
+        <li class="list-group-item">Closed CAPAs This Month: 3</li>
+      </ul>
+    </div>
+
+    <div class="card p-3">
+      <h5>Active CAPAs</h5>
+      <table class="table table-bordered table-striped mt-3">
+        <thead>
+          <tr><th>Issue</th><th>Source</th><th>Status</th><th>Owner</th><th>Due Date</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Process not followed</td>
+            <td>Internal Audit</td>
+            <td><span class="badge bg-warning text-dark">In Progress</span></td>
+            <td>Jane Doe</td>
+            <td>2025-04-25</td>
+          </tr>
+          <tr>
+            <td>New procedure needed</td>
+            <td>External Audit</td>
+            <td><span class="badge bg-danger">Overdue</span></td>
+            <td>John Smith</td>
+            <td>2025-03-30</td>
+          </tr>
+          <tr>
+            <td>Training required</td>
+            <td>Datix</td>
+            <td><span class="badge bg-success">Completed</span></td>
+            <td>Alice Green</td>
+            <td>2025-03-10</td>
+          </tr>
+          <tr>
+            <td>Improve on-boarding</td>
+            <td>Internal Audit</td>
+            <td><span class="badge bg-warning text-dark">In Progress</span></td>
+            <td>Ben White</td>
+            <td>2025-04-18</td>
+          </tr>
+          <tr>
+            <td>Missing meeting minutes</td>
+            <td>Datix</td>
+            <td><span class="badge bg-danger">Overdue</span></td>
+            <td>Sarah Black</td>
+            <td>2025-04-01</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <footer class="text-muted mt-5 mb-3">
-    <small>© Healthcare Partners 2018 | 
-      <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">
-        www.healthcarepartnersltd.co.uk
-      </a>
-    </small>
+  <footer class="text-muted mt-5 mb-3 text-center">
+    <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
   </footer>
 </body>
 </html>

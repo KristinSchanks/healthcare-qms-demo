@@ -2,64 +2,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Feedback Hub - Healthcare Partners QMS</title>
-  
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body {
-      background-color: #f5f8fa;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      color: #2e2e2e;
-    }
-    .module-box {
-      background: white;
+    .form-section {
+      background: #ffffff;
+      padding: 20px;
       border-radius: 10px;
-      padding: 30px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
+    .table th {
+      background-color: #e9f1f7;
     }
-    a {
-      text-decoration: none !important;
+    .badge {
+      font-size: 0.8rem;
     }
   </style>
-
 </head>
 <body>
   <div class="container py-4">
     <div class="text-center mb-4">
-      <img src="logo_full.png" height="50" class="mb-2">
+      <img src="../assets/img/logo_full.png" height="50" class="mb-2" />
       <h2 style="color: #005eb8; font-weight: 700;">Feedback Hub</h2>
     </div>
-    <div class="module-box mb-4">
+
+    <div class="form-section mb-4">
+      <h5>Submit Feedback</h5>
       <form>
         <div class="mb-3">
           <label class="form-label">Your Name</label>
           <input type="text" class="form-control" placeholder="Enter your name">
         </div>
         <div class="mb-3">
+          <label class="form-label">Department</label>
+          <input type="text" class="form-control" placeholder="Your department">
+        </div>
+        <div class="mb-3">
           <label class="form-label">Feedback</label>
-          <textarea class="form-control" rows="4" placeholder="Enter your feedback..."></textarea>
+          <textarea class="form-control" rows="4" placeholder="Type your feedback..."></textarea>
         </div>
         <button class="btn btn-primary">Submit Feedback</button>
       </form>
     </div>
-    <div class="module-box">
-      <h5>Recent Submissions</h5>
-      <ul class="list-group">
-        <li class="list-group-item">“The new training system is helpful.” – Jane Doe</li>
-        <li class="list-group-item">“Please fix the log-in issue.” – John Smith</li>
-      </ul>
+
+    <div class="card p-3">
+      <h5>Recent Feedback Entries</h5>
+      <table class="table table-bordered table-striped mt-3">
+        <thead>
+          <tr><th>Name</th><th>Department</th><th>Feedback</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td><td>RTS</td><td>Really helpful induction process, thank you!</td><td>2025-04-01</td>
+          </tr>
+          <tr>
+            <td>John Smith</td><td>EME</td><td>Could we get clearer equipment labels?</td><td>2025-03-28</td>
+          </tr>
+          <tr>
+            <td>Emily Green</td><td>MFL</td><td>The COSHH library is much easier to navigate now.</td><td>2025-03-25</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <footer class="text-muted mt-5 mb-3">
+
+  <footer class="text-muted mt-5 mb-3 text-center">
     <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
   </footer>
 </body>

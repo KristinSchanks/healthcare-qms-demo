@@ -2,58 +2,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>AI Help Assistant - Healthcare Partners QMS</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body {
-      background-color: #f5f8fa;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      color: #2e2e2e;
-    }
-    .module-box {
-      background: white;
+    .chat-box {
+      background: #f5f8fa;
+      border: 1px solid #ccc;
       border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 15px;
+      height: 300px;
+      overflow-y: auto;
+      font-size: 0.95rem;
     }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
+    .chat-entry {
+      margin-bottom: 12px;
     }
-    a {
-      text-decoration: none !important;
+    .chat-entry.user {
+      text-align: right;
+    }
+    .chat-entry.ai {
+      text-align: left;
+    }
+    .chat-entry span {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 20px;
+      background: #e0ecf9;
+      max-width: 75%;
+    }
+    .chat-entry.user span {
+      background: #cfe2ff;
+    }
+    .assistant-instructions {
+      font-size: 0.95rem;
+      background-color: #edf6fd;
+      padding: 10px 15px;
+      border-left: 4px solid #0072ce;
+      border-radius: 6px;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
   <div class="container py-4">
     <div class="text-center mb-4">
-      <img src="logo_full.png" height="50" class="mb-2">
+      <img src="../assets/img/logo_full.png" height="50" class="mb-2" />
       <h2 style="color: #005eb8; font-weight: 700;">AI Help Assistant</h2>
+      <p class="text-muted">Quickly locate tools, modules, or policies using the AI guide below.</p>
     </div>
-    <div class="module-box">
-      
-<div class="alert alert-info">This assistant can help locate content in your QMS.</div>
-<form><input type="text" class="form-control mb-3" placeholder="Ask a question..."></form>
-<ul class="list-group">
-  <li class="list-group-item">Where can I upload a new SOP?</li>
-  <li class="list-group-item">How do I log an incident?</li>
-  <li class="list-group-item">What’s the latest audit schedule?</li>
-</ul>
 
+    <div class="card p-3">
+      <div class="assistant-instructions">
+        <strong>Examples you can ask:</strong><br>
+        • "Where do I upload COSHH forms?"<br>
+        • "How do I view past audits?"<br>
+        • "What’s the deadline for my training?"<br>
+        The AI Assistant will guide you to the correct module or resource.
+      </div>
+
+      <div class="chat-box mb-3" id="chat-box">
+        <div class="chat-entry user"><span>Where can I find the Incident Reporting form?</span></div>
+        <div class="chat-entry ai"><span>You can find it under the 'Incident Reporting' module on the dashboard.</span></div>
+
+        <div class="chat-entry user"><span>How do I upload a new policy?</span></div>
+        <div class="chat-entry ai"><span>Go to the Document Library module and click 'Add New Document' at the top right.</span></div>
+
+        <div class="chat-entry user"><span>Who handles COSHH forms?</span></div>
+        <div class="chat-entry ai"><span>The EME, RTS, and MFL teams manage COSHH records in their respective sections.</span></div>
+      </div>
+
+      <form onsubmit="event.preventDefault();">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Ask the AI Assistant..." />
+          <button class="btn btn-primary">Ask</button>
+        </div>
+      </form>
     </div>
   </div>
-  <footer class="text-muted mt-5 mb-3">
-    <small>© Healthcare Partners 2018 | 
-      <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">
-        www.healthcarepartnersltd.co.uk
-      </a>
-    </small>
+
+  <footer class="text-muted mt-5 mb-3 text-center">
+    <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
   </footer>
 </body>
 </html>
