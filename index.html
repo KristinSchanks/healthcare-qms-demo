@@ -1,54 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/e/e4/NHS_England_logo.svg">
   <meta charset="UTF-8">
-  <title>Healthcare Partners QMS Dashboard</title>
+  <title>Dashboard - Healthcare Partners QMS</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background-color: #f5f8fa; }
-    .tile {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 20px;
-      text-align: center;
-      transition: 0.2s;
-    }
-    .tile:hover { background-color: #e6f0ff; transform: scale(1.02); }
+    body { background-color: #f5f8fa; font-family: Arial, sans-serif; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .tile {
+      background: linear-gradient(135deg, #e7f0fd, #c2dbf4);
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.2s ease;
+    }
+    .tile:hover {
+      background: linear-gradient(135deg, #d0e2f5, #a5c6ec);
+      transform: scale(1.02);
+    }
+    footer {
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
-  <div class="text-start px-3 pt-3"><img src="favicon.png" alt="Healthcare Partners Logo" height="40"></div>
-  <div class="container py-5">
-    <div class="text-center mb-4">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/NHS_England_logo.svg" height="40">
-      <h2 class="mt-2">Healthcare Partners QMS</h2>
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <img src="logo_full.png" height="50">
+      <h2>Healthcare Partners QMS Dashboard</h2>
     </div>
     <div class="grid">
-      <a href="documents.html" class="tile text-decoration-none text-dark">📁 Document Library</a>
-      <a href="capa.html" class="tile text-decoration-none text-dark">✅ CAPA Tracker</a>
-      <a href="incident.html" class="tile text-decoration-none text-dark">🚨 Incident Reporting</a>
-      <a href="audit.html" class="tile text-decoration-none text-dark">🗓️ Audit Schedule</a>
-      <a href="risk.html" class="tile text-decoration-none text-dark">📉 Risk Register</a>
-      <a href="coshh.html" class="tile text-decoration-none text-dark">⚗️ COSHH & Inventory</a>
-      <a href="suppliers.html" class="tile text-decoration-none text-dark">📦 Supplier Dashboard</a>
-      <a href="projects.html" class="tile text-decoration-none text-dark">📋 Project Management</a>
-      <a href="training.html" class="tile text-decoration-none text-dark">🎓 Training Tracker</a>
-      <a href="hr.html" class="tile text-decoration-none text-dark">👩‍⚕️ HR Dashboard</a>
-      <a href="feedback.html" class="tile text-decoration-none text-dark">💬 Feedback Hub</a>
-      <a href="lessons.html" class="tile text-decoration-none text-dark">📚 Lessons Learned</a>
-      <a href="ai_help.html" class="tile text-decoration-none text-dark">🤖 AI Help Assistant</a>
+      <a class="tile text-dark text-decoration-none" href="documents.html">📁 Document Library</a>
+      <a class="tile text-dark text-decoration-none" href="capa.html">✅ CAPA Tracker</a>
+      <a class="tile text-dark text-decoration-none" href="incident.html">🚨 Incident Reporting</a>
+      <a class="tile text-dark text-decoration-none" href="audit.html">🗓️ Audit Schedule</a>
+      <a class="tile text-dark text-decoration-none" href="risk.html">📉 Risk Register</a>
+      <a class="tile text-dark text-decoration-none" href="coshh.html">⚗️ COSHH & Inventory</a>
+      <a class="tile text-dark text-decoration-none" href="suppliers.html">📦 Suppliers</a>
+      <a class="tile text-dark text-decoration-none" href="projects.html">📋 Project Management</a>
+      <a class="tile text-dark text-decoration-none" href="training.html">🎓 Training Tracker</a>
+      <a class="tile text-dark text-decoration-none" href="hr.html">👩‍⚕️ HR Dashboard</a>
+      <a class="tile text-dark text-decoration-none" href="feedback.html">💬 Feedback Hub</a>
+      <a class="tile text-dark text-decoration-none" href="lessons.html">📚 Lessons Learned</a>
+      <a class="tile text-dark text-decoration-none" href="ai_help.html">🤖 AI Help Assistant</a>
     </div>
   </div>
-
-<footer class="text-center text-muted mt-5 mb-3">
-  <small>© Healthcare Partners 2018 | 
-  <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
-</footer>
-
+  <footer class="text-center text-muted mt-5 mb-3">
+    <small>© Healthcare Partners 2018 | 
+    <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
+  </footer>
 </body>
 </html>
