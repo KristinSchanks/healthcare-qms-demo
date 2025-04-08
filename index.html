@@ -2,69 +2,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard - Healthcare Partners QMS</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Login - Healthcare Partners QMS</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      background-color: #f5f8fa;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
-      color: #2e2e2e;
+      background: #e9f1f7;
+      font-family: 'Roboto', sans-serif;
     }
-    .tile {
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto;
       background: white;
-      border: 1px solid #d9e1ec;
+      padding: 30px;
       border-radius: 10px;
-      padding: 25px;
-      text-align: center;
-      color: #005eb8;
-      font-weight: 600;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      text-decoration: none !important;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .login-container img {
       display: block;
+      margin: 0 auto 20px auto;
     }
-    .tile:hover {
-      background-color: #edf4fc;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
-    }
-    a {
-      text-decoration: none !important;
+    h2 {
+      color: #005eb8;
+      font-weight: 700;
     }
   </style>
 </head>
 <body>
-  <div class="container py-4">
-    <div class="text-center mb-4">
-      <img src="logo_full.png" height="50" class="mb-2">
-      <h2 style="color: #005eb8; font-weight: 700;">Healthcare Partners QMS Dashboard</h2>
-      <p class="text-muted" style="font-size: 1.1rem;">Welcome Jane Doe! Where would you like to start?</p>
-    </div>
-    <div class="row g-3">
-      <div class="col-md-3"><a class="tile" href="dashboard.html">📊 Dashboard & Analytics</a></div>
-      <div class="col-md-3"><a class="tile" href="documents.html">📁 Document Library</a></div>
-      <div class="col-md-3"><a class="tile" href="capa.html">✅ CAPA Tracker</a></div>
-      <div class="col-md-3"><a class="tile" href="incident.html">🚨 Incident Reporting</a></div>
-      <div class="col-md-3"><a class="tile" href="audit.html">🗓️ Audit Schedule</a></div>
-      <div class="col-md-3"><a class="tile" href="risk.html">📉 Risk Register</a></div>
-      <div class="col-md-3"><a class="tile" href="coshh.html">⚗️ COSHH & Inventory</a></div>
-      <div class="col-md-3"><a class="tile" href="suppliers.html">📦 Suppliers</a></div>
-      <div class="col-md-3"><a class="tile" href="projects.html">📋 Project Management</a></div>
-      <div class="col-md-3"><a class="tile" href="training.html">🎓 Training Tracker</a></div>
-      <div class="col-md-3"><a class="tile" href="hr.html">👩‍⚕️ HR Dashboard</a></div>
-      <div class="col-md-3"><a class="tile" href="feedback.html">💬 Feedback Hub</a></div>
-      <div class="col-md-3"><a class="tile" href="lessons.html">📚 Lessons Learned</a></div>
-      <div class="col-md-3"><a class="tile" href="ai_help.html">🤖 AI Help Assistant</a></div>
-    </div>
+  <div class="login-container text-center">
+    <img src="assets/img/logo_full.png" height="60" alt="Healthcare Partners Logo" />
+    <h2>Healthcare Partners QMS</h2>
+    <p class="text-muted mb-4">Authorised personnel only</p>
+    <form onsubmit="event.preventDefault(); window.location.href='mainmenu.html';">
+      <div class="mb-3 text-start">
+        <label class="form-label">Email address</label>
+        <input type="email" class="form-control" placeholder="Enter email" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Enter password" required>
+      </div>
+      <button class="btn btn-primary w-100 mb-3" type="submit">Log In</button>
+      <a href="#" class="text-decoration-none d-block">Forgot password?</a>
+    </form>
   </div>
-  <footer class="text-muted mt-5 mb-3">
-    <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
-  </footer>
 </body>
 </html>
