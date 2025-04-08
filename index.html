@@ -1,55 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Dashboard - Healthcare Partners QMS</title>
   <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background-color: #f5f8fa; font-family: Arial, sans-serif; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    body {
+      background-color: #f5f8fa;
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+      color: #2e2e2e;
+    }
     .tile {
-      background: linear-gradient(135deg, #e7f0fd, #c2dbf4);
-      border-radius: 12px;
-      padding: 30px 20px;
+      background: white;
+      border: 1px solid #d9e1ec;
+      border-radius: 10px;
+      padding: 25px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: 0.2s ease;
+      color: #005eb8;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-decoration: none !important;
+      display: block;
     }
     .tile:hover {
-      background: linear-gradient(135deg, #d0e2f5, #a5c6ec);
-      transform: scale(1.02);
+      background-color: #edf4fc;
     }
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+    a {
+      text-decoration: none !important;
     }
   </style>
 </head>
 <body>
   <div class="container py-4">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <img src="logo_full.png" height="50">
-      <h2>Healthcare Partners QMS Dashboard</h2>
+    <div class="text-center mb-4">
+      <img src="logo_full.png" height="50" class="mb-2">
+      <h2 style="color: #005eb8; font-weight: 700;">Healthcare Partners QMS Dashboard</h2>
+      <p class="text-muted" style="font-size: 1.1rem;">Welcome Jane Doe! Where would you like to start?</p>
     </div>
-    <div class="grid">
-      <a class="tile text-dark text-decoration-none" href="documents.html">📁 Document Library</a>
-      <a class="tile text-dark text-decoration-none" href="capa.html">✅ CAPA Tracker</a>
-      <a class="tile text-dark text-decoration-none" href="incident.html">🚨 Incident Reporting</a>
-      <a class="tile text-dark text-decoration-none" href="audit.html">🗓️ Audit Schedule</a>
-      <a class="tile text-dark text-decoration-none" href="risk.html">📉 Risk Register</a>
-      <a class="tile text-dark text-decoration-none" href="coshh.html">⚗️ COSHH & Inventory</a>
-      <a class="tile text-dark text-decoration-none" href="suppliers.html">📦 Suppliers</a>
-      <a class="tile text-dark text-decoration-none" href="projects.html">📋 Project Management</a>
-      <a class="tile text-dark text-decoration-none" href="training.html">🎓 Training Tracker</a>
-      <a class="tile text-dark text-decoration-none" href="hr.html">👩‍⚕️ HR Dashboard</a>
-      <a class="tile text-dark text-decoration-none" href="feedback.html">💬 Feedback Hub</a>
-      <a class="tile text-dark text-decoration-none" href="lessons.html">📚 Lessons Learned</a>
-      <a class="tile text-dark text-decoration-none" href="ai_help.html">🤖 AI Help Assistant</a>
+    <div class="row g-3">
+      <div class="col-md-3"><a class="tile" href="dashboard.html">📊 Dashboard & Analytics</a></div>
+      <div class="col-md-3"><a class="tile" href="documents.html">📁 Document Library</a></div>
+      <div class="col-md-3"><a class="tile" href="capa.html">✅ CAPA Tracker</a></div>
+      <div class="col-md-3"><a class="tile" href="incident.html">🚨 Incident Reporting</a></div>
+      <div class="col-md-3"><a class="tile" href="audit.html">🗓️ Audit Schedule</a></div>
+      <div class="col-md-3"><a class="tile" href="risk.html">📉 Risk Register</a></div>
+      <div class="col-md-3"><a class="tile" href="coshh.html">⚗️ COSHH & Inventory</a></div>
+      <div class="col-md-3"><a class="tile" href="suppliers.html">📦 Suppliers</a></div>
+      <div class="col-md-3"><a class="tile" href="projects.html">📋 Project Management</a></div>
+      <div class="col-md-3"><a class="tile" href="training.html">🎓 Training Tracker</a></div>
+      <div class="col-md-3"><a class="tile" href="hr.html">👩‍⚕️ HR Dashboard</a></div>
+      <div class="col-md-3"><a class="tile" href="feedback.html">💬 Feedback Hub</a></div>
+      <div class="col-md-3"><a class="tile" href="lessons.html">📚 Lessons Learned</a></div>
+      <div class="col-md-3"><a class="tile" href="ai_help.html">🤖 AI Help Assistant</a></div>
     </div>
   </div>
-  <footer class="text-center text-muted mt-5 mb-3">
-    <small>© Healthcare Partners 2018 | 
-    <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
+  <footer class="text-muted mt-5 mb-3">
+    <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
   </footer>
 </body>
 </html>

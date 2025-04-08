@@ -1,16 +1,71 @@
-<html><head><title>Risk Register</title><link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"></head>
-    <body><div class="container py-4">
-    <div class="mb-4"><img src="favicon.png" height="40"><h2>Risk Register</h2></div>
-    <table class="table table-bordered text-center">
-    <thead><tr><th>Severity ↓ / Likelihood →</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead>
-    <tbody>
-    <tr><td>1</td><td class="table-success">1</td><td class="table-success">2</td><td class="table-success">3</td><td class="table-success">4</td><td class="table-warning">5</td></tr>
-    <tr><td>2</td><td class="table-success">2</td><td class="table-success">4</td><td class="table-warning">6</td><td class="table-warning">8</td><td class="table-warning">10</td></tr>
-    <tr><td>3</td><td class="table-success">3</td><td class="table-warning">6</td><td class="table-warning">9</td><td class="table-danger">12</td><td class="table-danger">15</td></tr>
-    <tr><td>4</td><td class="table-warning">4</td><td class="table-warning">8</td><td class="table-danger">12</td><td class="table-danger">16</td><td class="table-danger">20</td></tr>
-    <tr><td>5</td><td class="table-warning">5</td><td class="table-danger">10</td><td class="table-danger">15</td><td class="table-danger">20</td><td class="table-danger">25</td></tr>
-    </tbody></table>
-    </div><footer class="text-center text-muted mt-5 mb-3">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Risk Register - Healthcare Partners QMS</title>
+  
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f8fa;
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+      color: #2e2e2e;
+    }
+    .module-box {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+    a {
+      text-decoration: none !important;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container py-4">
+    <div class="text-center mb-4">
+      <img src="logo_full.png" height="50" class="mb-2">
+      <h2 style="color: #005eb8; font-weight: 700;">Risk Register</h2>
+    </div>
+    <div class="module-box">
+    <div class="mb-4">
+      <h5>Risk Overview</h5>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-muted mb-1">Risk by Category</p>
+          <img src="https://via.placeholder.com/400x200?text=Category+Chart" class="img-fluid rounded border">
+        </div>
+        <div class="col-md-6">
+          <p class="text-muted mb-1">Risk by Priority Level</p>
+          <img src="https://via.placeholder.com/400x200?text=Priority+Chart" class="img-fluid rounded border">
+        </div>
+      </div>
+    </div>
+    <h5>Risk Register Table</h5>
+    <table class="table table-bordered mt-3">
+      <thead class="table-light">
+        <tr><th>ID</th><th>Description</th><th>Owner</th><th>Priority</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>R-101</td><td>Outdated fire safety procedures</td><td>Jane Doe</td><td><span class="badge bg-danger">High</span></td></tr>
+        <tr><td>R-102</td><td>Insufficient staff training for COSHH</td><td>John Smith</td><td><span class="badge bg-warning text-dark">Medium</span></td></tr>
+        <tr><td>R-103</td><td>Delayed equipment servicing</td><td>Alice White</td><td><span class="badge bg-success">Low</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <footer class="text-muted mt-5 mb-3">
     <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
-    </footer></body></html>
+  </footer>
+</body>
+</html>
