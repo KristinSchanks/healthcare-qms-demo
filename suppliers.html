@@ -1,19 +1,66 @@
+
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Supplier Dashboard with contacts and reviews</title>
-        <link rel="icon" href="favicon.png" type="image/png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container py-4">
-            <img src="logo_full.png" alt="Healthcare Partners Logo" height="40" class="mb-3">
-            <h2>Supplier Dashboard with contacts and reviews</h2>
-            <p>This is a placeholder for the supplier dashboard with contacts and reviews module.</p>
-        </div>
-        <footer class="text-center text-muted mt-5 mb-3">
-            <small>© Healthcare Partners 2018 | <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">www.healthcarepartnersltd.co.uk</a></small>
-        </footer>
-    </body>
-    </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suppliers - Healthcare Partners QMS</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f8fa;
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+      color: #2e2e2e;
+    }
+    .module-box {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+    a {
+      text-decoration: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <div class="text-center mb-4">
+      <img src="logo_full.png" height="50" class="mb-2">
+      <h2 style="color: #005eb8; font-weight: 700;">Suppliers</h2>
+    </div>
+    <div class="module-box">
+      
+    <div class="mb-4">
+      <h5>Supplier Evaluation Overview</h5>
+      <img src="https://via.placeholder.com/600x250?text=Supplier+Evaluation+Chart" class="img-fluid rounded border">
+    </div>
+    <table class="table table-striped">
+      <thead class="table-light"><tr>
+        <th>Supplier</th><th>Contact</th><th>Email</th><th>Category</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>MedSupply Ltd</td><td>Claire Thomas</td><td>claire@medsupply.co.uk</td><td>Consumables</td></tr>
+        <tr><td>SafeTech Equip</td><td>Alex Green</td><td>alex@safetech.com</td><td>Medical Equipment</td></tr>
+        <tr><td>LabDirect</td><td>Emily White</td><td>emily@labdirect.co.uk</td><td>Lab Supplies</td></tr>
+      </tbody>
+    </table>
+    
+    </div>
+  </div>
+  <footer class="text-muted mt-5 mb-3">
+    <small>© Healthcare Partners 2018 | 
+      <a href="https://www.healthcarepartnersltd.co.uk/" target="_blank">
+        www.healthcarepartnersltd.co.uk
+      </a>
+    </small>
+  </footer>
+</body>
+</html>
